@@ -1,0 +1,47 @@
+
+# mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hax?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123
+
+
+#mybatis
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath:mapperExtend/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.hax.system.demo.entity
+  configuration:
+    mapUnderscoreToCamelCase: true  #Map自动驼峰下划线命名转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql语句
+#tkmapper
+mapper:
+  mappers:
+  - com.hax.common.mybatis.mapper.MyBaseMapper
+  not-empty: true  # 按主键插入或更新时，是否判断字符串 != ''
+  style: camelhump    #驼峰方式
+  wrap-keyword: "`{0}`"   # 自动配置关键字，配置后不需要使用 @Column 指定别名
+  safe-delete: true  # 删除时必须设置查询条件
+  safe-update: true  # 更新时必须设置查询条件
+  identity: MYSQL  # 取主键的方式
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+
+
+# Swagger 配置项
+swagger:
+  title: 系统demo模块
+  description:  系统demo模块
+  version: 1.0.0
+  base-package: com.hax.system.demo.controller
+
+
+

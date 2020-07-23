@@ -1,0 +1,12 @@
+# 服务器的配置项
+server:
+  port: 8002
+
+spring:
+  # Application 的配置项
+  application:
+    name: hax-auth
+  # Profile 的配置项
+  profiles:
+    active: local
+

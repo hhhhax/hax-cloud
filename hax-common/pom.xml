@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hax</artifactId>
+        <groupId>com.hax.cloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hax-common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>hax-common-redis</module>
+        <module>hax-common-swagger</module>
+        <module>hax-common-core</module>
+        <module>hax-common-mybatis</module>
+        <module>hax-common-security</module>
+        <module>hax-common-web</module>
+        <module>hax-common-jwt</module>
+    </modules>
+    <description>hax-common通用模块</description>
+
+
+</project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hax-auth" />
+        <module name="hax-common-core" />
+        <module name="hax-common-jwt" />
+        <module name="hax-common-mybatis" />
+        <module name="hax-common-redis" />
+        <module name="hax-common-security-admin" />
+        <module name="hax-common-security-annotations" />
+        <module name="hax-common-security-annotations-admin" />
+        <module name="hax-common-security-common" />
+        <module name="hax-common-security-user" />
+        <module name="hax-common-starter-web" />
+        <module name="hax-common-swagger" />
+        <module name="hax-common-web" />
+        <module name="hax-gateway" />
+        <module name="hax-system-api" />
+        <module name="hax-system-biz" />
+        <module name="hax-system-demo-api" />
+        <module name="hax-system-demo-biz" />
+        <module name="hax-user-demo-api" />
+        <module name="hax-user-demo-biz" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hax-auth" target="1.8" />
+      <module name="hax-cloud" target="1.8" />
+      <module name="hax-common" target="1.8" />
+      <module name="hax-common-core" target="1.8" />
+      <module name="hax-common-jwt" target="1.8" />
+      <module name="hax-common-mybatis" target="1.8" />
+      <module name="hax-common-redis" target="1.8" />
+      <module name="hax-common-security" target="1.8" />
+      <module name="hax-common-security-admin" target="1.8" />
+      <module name="hax-common-security-annotations" target="1.8" />
+      <module name="hax-common-security-annotations-admin" target="1.8" />
+      <module name="hax-common-security-common" target="1.8" />
+      <module name="hax-common-security-user" target="1.8" />
+      <module name="hax-common-starter-web" target="1.8" />
+      <module name="hax-common-swagger" target="1.8" />
+      <module name="hax-common-web" target="1.8" />
+      <module name="hax-gateway" target="1.8" />
+      <module name="hax-system" target="1.8" />
+      <module name="hax-system-api" target="1.8" />
+      <module name="hax-system-biz" target="1.8" />
+      <module name="hax-system-demo" target="1.8" />
+      <module name="hax-system-demo-api" target="1.8" />
+      <module name="hax-system-demo-biz" target="1.8" />
+      <module name="hax-user-demo" target="1.8" />
+      <module name="hax-user-demo-api" target="1.8" />
+      <module name="hax-user-demo-biz" target="1.8" />
+      <module name="haxcommonjwt" target="1.8" />
+      <module name="haxcommonsecurityuser" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

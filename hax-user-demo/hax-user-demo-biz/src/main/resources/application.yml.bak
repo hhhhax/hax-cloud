@@ -1,0 +1,50 @@
+# 服务器的配置项
+server:
+  port: 4001
+
+spring:
+  # Application 的配置项
+  application:
+    name: hax-system
+  # Profile 的配置项
+  profiles:
+    active: local
+
+#mybatis
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath:mapperExtend/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.hax.user.entity
+  configuration:
+    mapUnderscoreToCamelCase: true  #Map自动驼峰下划线命名转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql语句
+#tkmapper
+mapper:
+  mappers:
+  - com.hax.common.mybatis.mapper.MyBaseMapper
+  not-empty: true  # 按主键插入或更新时，是否判断字符串 != ''
+  style: camelhump    #驼峰方式
+  wrap-keyword: "`{0}`"   # 自动配置关键字，配置后不需要使用 @Column 指定别名
+  safe-delete: true  # 删除时必须设置查询条件
+  safe-update: true  # 更新时必须设置查询条件
+  identity: MYSQL  # 取主键的方式
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+
+
+
+# Swagger 配置项
+swagger:
+  title: 用户demo模块
+  description:  用户demo模块
+  version: 1.0.0
+  base-package: com.hax.user.demo.controller
+
+
+

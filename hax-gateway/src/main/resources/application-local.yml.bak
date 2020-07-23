@@ -1,0 +1,33 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        # 认证中心
+        - id: ruoyi-auth
+          uri: lb://ruoyi-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            # 验证码处理
+            - ImageCodeFilter
+            - StripPrefix=1
+        # 系统模块
+        - id: ruoyi-system
+          uri: lb://ruoyi-system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix=1
+
+# 不校验验证码终端
+#ignore:
+#  clients:
+#    - ruoyi
