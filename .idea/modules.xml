@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hax-auth/hax-auth.iml" filepath="$PROJECT_DIR$/hax-auth/hax-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-cloud.iml" filepath="$PROJECT_DIR$/hax-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common.iml" filepath="$PROJECT_DIR$/hax-common/hax-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common-core/hax-common-core.iml" filepath="$PROJECT_DIR$/hax-common/hax-common-core/hax-common-core.iml" />
@@ -15,7 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common-security/hax-common-security-user/hax-common-security-user.iml" filepath="$PROJECT_DIR$/hax-common/hax-common-security/hax-common-security-user/hax-common-security-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common-swagger/hax-common-swagger.iml" filepath="$PROJECT_DIR$/hax-common/hax-common-swagger/hax-common-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common-web/hax-common-web.iml" filepath="$PROJECT_DIR$/hax-common/hax-common-web/hax-common-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hax-gateway/hax-gateway.iml" filepath="$PROJECT_DIR$/hax-gateway/hax-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hax-job/hax-job.iml" filepath="$PROJECT_DIR$/hax-job/hax-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-system/hax-system.iml" filepath="$PROJECT_DIR$/hax-system/hax-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-system/hax-system-api/hax-system-api.iml" filepath="$PROJECT_DIR$/hax-system/hax-system-api/hax-system-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-system/hax-system-biz/hax-system-biz.iml" filepath="$PROJECT_DIR$/hax-system/hax-system-biz/hax-system-biz.iml" />
@@ -25,7 +24,6 @@
       <module fileurl="file://$PROJECT_DIR$/hax-user-demo/hax-user-demo.iml" filepath="$PROJECT_DIR$/hax-user-demo/hax-user-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-user-demo/hax-user-demo-api/hax-user-demo-api.iml" filepath="$PROJECT_DIR$/hax-user-demo/hax-user-demo-api/hax-user-demo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hax-user-demo/hax-user-demo-biz/hax-user-demo-biz.iml" filepath="$PROJECT_DIR$/hax-user-demo/hax-user-demo-biz/hax-user-demo-biz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hax-common/hax-common-security/haxcommonsecurityuser.iml" filepath="$PROJECT_DIR$/hax-common/hax-common-security/haxcommonsecurityuser.iml" />
     </modules>
   </component>
 </project>

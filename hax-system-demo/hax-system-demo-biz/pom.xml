@@ -20,7 +20,6 @@
             <artifactId>hax-system-demo-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <!--注册中心客户端-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

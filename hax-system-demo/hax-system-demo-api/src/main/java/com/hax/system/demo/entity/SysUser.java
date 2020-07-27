@@ -1,246 +1,82 @@
 package com.hax.system.demo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import java.io.Serializable;
-import java.util.Date;
-import javax.persistence.*;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
-@Table(name = "sys_user")
+
+
+/**
+ * <p>
+ * 管理员用户表
+ * </p>
+ *
+ * @author hax
+ * @since 2020-07-23
+ */
+@Data
+@ApiModel(value="SysUser对象", description="管理员用户表")
 public class SysUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    /**
-     * 管理员ID
-     */
-    @Id
+
+    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty(value = "管理员ID")
     private Integer id;
 
-    /**
-     * 真实名字
-     */
+    @ApiModelProperty(value = "真实名字")
     private String name;
 
-    /**
-     * 头像
-     */
+    @ApiModelProperty(value = "头像")
     private String avatar;
 
-    /**
-     * 部门id
-     */
-    @Column(name = "dept_id")
+    @ApiModelProperty(value = "部门id")
     private Integer deptId;
 
-    /**
-     * 登陆账号
-     */
+    @ApiModelProperty(value = "登陆账号")
     private String username;
 
-    /**
-     * 加密后的密码
-     */
+    @ApiModelProperty(value = "加密后的密码")
     private String password;
 
-    /**
-     * 密码的盐
-     */
-    @Column(name = "password_salt")
+    @ApiModelProperty(value = "密码的盐")
     private String passwordSalt;
 
-    /**
-     * 创建时间
-     */
-    @Column(name = "create_time")
-    private Date createTime;
+    @ApiModelProperty(value = "创建时间")
+    private LocalDateTime createTime;
 
-    /**
-     * 最后更新时间
-     */
-    @Column(name = "update_time")
-    private Date updateTime;
+    @ApiModelProperty(value = "最后更新时间")
+    private LocalDateTime updateTime;
 
-    /**
-     * 删除标识（0-正常,1-删除）
-     */
-    @Column(name = "del_flag")
+    @TableLogic
+    @ApiModelProperty(value = "删除标识（0-正常,1-删除）")
     private String delFlag;
 
-    /**
-     * 获取管理员ID
-     *
-     * @return id - 管理员ID
-     */
-    public Integer getId() {
-        return id;
-    }
+    public static final String ID = "id";
 
-    /**
-     * 设置管理员ID
-     *
-     * @param id 管理员ID
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public static final String NAME = "name";
 
-    /**
-     * 获取真实名字
-     *
-     * @return name - 真实名字
-     */
-    public String getName() {
-        return name;
-    }
+    public static final String AVATAR = "avatar";
 
-    /**
-     * 设置真实名字
-     *
-     * @param name 真实名字
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+    public static final String DEPT_ID = "dept_id";
 
-    /**
-     * 获取头像
-     *
-     * @return avatar - 头像
-     */
-    public String getAvatar() {
-        return avatar;
-    }
+    public static final String USERNAME = "username";
 
-    /**
-     * 设置头像
-     *
-     * @param avatar 头像
-     */
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
+    public static final String PASSWORD = "password";
 
-    /**
-     * 获取部门id
-     *
-     * @return dept_id - 部门id
-     */
-    public Integer getDeptId() {
-        return deptId;
-    }
+    public static final String PASSWORD_SALT = "password_salt";
 
-    /**
-     * 设置部门id
-     *
-     * @param deptId 部门id
-     */
-    public void setDeptId(Integer deptId) {
-        this.deptId = deptId;
-    }
+    public static final String CREATE_TIME = "create_time";
 
-    /**
-     * 获取登陆账号
-     *
-     * @return username - 登陆账号
-     */
-    public String getUsername() {
-        return username;
-    }
+    public static final String UPDATE_TIME = "update_time";
 
-    /**
-     * 设置登陆账号
-     *
-     * @param username 登陆账号
-     */
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    public static final String DEL_FLAG = "del_flag";
 
-    /**
-     * 获取加密后的密码
-     *
-     * @return password - 加密后的密码
-     */
-    public String getPassword() {
-        return password;
-    }
 
-    /**
-     * 设置加密后的密码
-     *
-     * @param password 加密后的密码
-     */
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
-    /**
-     * 获取密码的盐
-     *
-     * @return password_salt - 密码的盐
-     */
-    public String getPasswordSalt() {
-        return passwordSalt;
-    }
-
-    /**
-     * 设置密码的盐
-     *
-     * @param passwordSalt 密码的盐
-     */
-    public void setPasswordSalt(String passwordSalt) {
-        this.passwordSalt = passwordSalt;
-    }
-
-    /**
-     * 获取创建时间
-     *
-     * @return create_time - 创建时间
-     */
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    /**
-     * 设置创建时间
-     *
-     * @param createTime 创建时间
-     */
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    /**
-     * 获取最后更新时间
-     *
-     * @return update_time - 最后更新时间
-     */
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    /**
-     * 设置最后更新时间
-     *
-     * @param updateTime 最后更新时间
-     */
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    /**
-     * 获取删除标识（0-正常,1-删除）
-     *
-     * @return del_flag - 删除标识（0-正常,1-删除）
-     */
-    public String getDelFlag() {
-        return delFlag;
-    }
-
-    /**
-     * 设置删除标识（0-正常,1-删除）
-     *
-     * @param delFlag 删除标识（0-正常,1-删除）
-     */
-    public void setDelFlag(String delFlag) {
-        this.delFlag = delFlag;
-    }
 }

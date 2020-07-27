@@ -33,6 +33,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import org.yaml.snakeyaml.constructor.DuplicateKeyException;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.SocketTimeoutException;
@@ -91,6 +92,7 @@ public class GlobalExceptionHandlerResolver {
         log.error("[socketTimeoutExceptionHandler]", e);
         return CommonResult.error(SOCKET_TIMEOUT_ERROR.getCode(), SOCKET_TIMEOUT_ERROR.getMessage());
     }
+
 
     // 逻辑异常
     @ExceptionHandler(value = ServiceException.class)

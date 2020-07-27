@@ -24,7 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ConditionalOnClass({Docket.class, ApiInfoBuilder.class})
 @ConditionalOnProperty(prefix = "swagger", value = "enable", matchIfMissing = true) // 允许使用 swagger.enable=false 禁用 Swagger
 @EnableConfigurationProperties(SwaggerProperties.class)
-public class SwaggerAutoConfiguration {
+public class  SwaggerAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean

@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hax-auth" />
         <module name="hax-common-core" />
         <module name="hax-common-jwt" />
         <module name="hax-common-mybatis" />
@@ -19,7 +18,7 @@
         <module name="hax-common-starter-web" />
         <module name="hax-common-swagger" />
         <module name="hax-common-web" />
-        <module name="hax-gateway" />
+        <module name="hax-job" />
         <module name="hax-system-api" />
         <module name="hax-system-biz" />
         <module name="hax-system-demo-api" />
@@ -46,6 +45,7 @@
       <module name="hax-common-swagger" target="1.8" />
       <module name="hax-common-web" target="1.8" />
       <module name="hax-gateway" target="1.8" />
+      <module name="hax-job" target="1.8" />
       <module name="hax-system" target="1.8" />
       <module name="hax-system-api" target="1.8" />
       <module name="hax-system-biz" target="1.8" />

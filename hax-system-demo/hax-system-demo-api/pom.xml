@@ -21,6 +21,12 @@
             <artifactId>hax-common-mybatis</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.hax.cloud</groupId>
+            <artifactId>hax-common-swagger</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--feign 依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -15,6 +15,7 @@
     <file url="file://$PROJECT_DIR$/hax-common/hax-common-swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hax-common/hax-common-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hax-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hax-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hax-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hax-system-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hax-system-demo/hax-system-demo-api" charset="UTF-8" />

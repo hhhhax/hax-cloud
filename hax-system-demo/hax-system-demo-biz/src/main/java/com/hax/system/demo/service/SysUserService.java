@@ -1,18 +1,22 @@
 package com.hax.system.demo.service;
-import com.hax.common.core.vo.CommonResult;
-import com.hax.system.demo.dto.SystemUserCreateDTO;
+
 import com.hax.system.demo.entity.SysUser;
-import com.hax.common.mybatis.service.Service;
-
-import java.util.List;
-
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * Created by hax on 2020/07/21.
+ * <p>
+ * 管理员用户表 服务类
+ * </p>
+ *
+ * @author hax
+ * @date 2020-07-24
  */
-public interface SysUserService extends Service<SysUser> {
 
-    CommonResult add(SystemUserCreateDTO createDTO);
+public interface SysUserService extends IService<SysUser> {
 
-    CommonResult<List<SysUser>> list();
+    boolean add(SysUser sysUser);
+
+    SysUser selectByUsername(String username);
+
+    int deleteByUsername(String admin);
 }

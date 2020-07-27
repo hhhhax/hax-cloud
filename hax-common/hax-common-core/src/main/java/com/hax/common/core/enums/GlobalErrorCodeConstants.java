@@ -33,6 +33,7 @@ public interface GlobalErrorCodeConstants {
     ErrorCode TOKEN_EXPIRED_ERROR = new ErrorCode(503, "TOKEN过期异常");
     ErrorCode VERIFY_TOKEN_ERROR = new ErrorCode(504, "TOKEN校验异常");
     ErrorCode SOCKET_TIMEOUT_ERROR = new ErrorCode(505, "通信超时");
+    ErrorCode DUPLICATEE_KEY_ERROR = new ErrorCode(506, "唯一性约束错误");
 
     ErrorCode UNKNOWN = new ErrorCode(999, "未知错误");
 
